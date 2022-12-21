@@ -1,0 +1,68 @@
+<html>
+<head>
+<h1> PICO SENSOR DATA </h1> 
+</head>
+<script type="text/javascript">
+    function joystickFunction()
+    {
+      var value_x = 1.3455;
+      var value_y = 2.445;
+      var value_z = 1.33456;
+        
+        var textbox1 = document.getElementById('textbox1');
+        var textbox2 = document.getElementById('textbox2');
+        var textbox3 = document.getElementById('textbox3');
+        var button_1 = document.getElementById('button_1');
+        var button_2 = document.getElementById('button_2');
+      
+textbox1.value = value_x;
+textbox2.value = value_y;
+textbox3.value = value_z;
+button_1.value = "YES";
+button_2.value = "NO";
+
+}
+    
+</script>
+<body>
+   
+    
+
+    X-AXIS
+    <input type="text" name="X-AXIS" id="textbox1" readonly="true" />
+    <br />
+   <pre> 
+
+   </pre>
+
+    Y-AXIS
+    <input type="text" name="Y-AXIS" id="textbox2" readonly="true" />
+    
+    <br />
+       <pre> 
+
+   </pre>
+
+
+    Z-AXIS
+   <input type="text" name="Z-AXIS" id="textbox3" readonly="true"/>
+    <br />
+     <pre> 
+
+
+   </pre>
+
+
+    BUTTON_1 DATA
+   <input type="text" name="BUTTON_1 PRESSED" id="button_1" readonly="true" />
+    <br />
+
+
+    BUTTON_2 DATA
+    <input type="text" name="BUTTON_2 PRESSED" id="button_2" readonly="true" />
+
+<input type="submit" name="GET VALUES" id="get_values" onclick="joystickFunction()" value="CLICK TO GET VALUES" />
+   
+    
+</body>
+</html>
